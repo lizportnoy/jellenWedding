@@ -5715,6 +5715,10 @@ h3 {
   .header {
     margin-bottom: 30px; }
 
+  h1.date {
+    width: 100%;
+    font-size: 2em; }
+
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0; } }
