@@ -11,6 +11,7 @@ var path = require('path');
 var $ = require('gulp-load-plugins')();
 var browserify = require('browserify');
 var watchify = require('watchify');
+var sass = require('gulp-ruby-sass')
 var source = require('vinyl-source-stream'),
     
     sourceFile = './app/scripts/app.js',
@@ -21,12 +22,11 @@ var source = require('vinyl-source-stream'),
 
 // Styles
 gulp.task('styles', function () {
-    return gulp.src('app/styles/main.scss')
-        .pipe($.rubySass({
+    return  sass('app/styles/main.scss',{
             style: 'expanded',
             precision: 10,
             loadPath: ['app/bower_components']
-        }))
+        })
         .pipe($.autoprefixer('last 1 version'))
         .pipe(gulp.dest('dist/styles'))
         .pipe($.size());
@@ -114,7 +114,7 @@ gulp.task('serve', function () {
     gulp.src('./dist')
         .pipe($.webserver({
             livereload: true,
-            port: 9000
+            port: 3000
         }));
 });
 
@@ -138,7 +138,7 @@ gulp.task('extras', function () {
 });
 
 // Watch
-gulp.task('watch', ['html', 'bundle', 'serve'], function () {
+gulp.task('watch', ['html', 'serve'], function () {
 
     // Watch .json files
     gulp.watch('app/scripts/**/*.json', ['json']);
@@ -149,8 +149,6 @@ gulp.task('watch', ['html', 'bundle', 'serve'], function () {
     
     // Watch .scss files
     gulp.watch('app/styles/**/*.scss', ['styles']);
-    
-
 
 
     // Watch image files
@@ -161,4 +159,4 @@ gulp.task('watch', ['html', 'bundle', 'serve'], function () {
 gulp.task('build', ['html', 'bundle', 'images', 'extras']);
 
 // Default task
-gulp.task('default', ['clean', 'build', 'jest' ]);
+gulp.task('default', ['clean', 'build', 'jest', 'watch' ]);
