@@ -13,9 +13,11 @@ app.use(morgan('dev'));                                         // log every req
 app.use(bodyParser.urlencoded({'extended':'true'}));            // parse application/x-www-form-urlencoded
 app.use(bodyParser.json());                                     // parse application/json
 app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
+
 app.use(express.static(path.join(__dirname, './app')));
 
 console.log(path.join(__dirname, './app'));
+
 var port = process.env.PORT || 3000;
 
 app.listen(port);
