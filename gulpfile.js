@@ -11,7 +11,7 @@ var path = require('path');
 var $ = require('gulp-load-plugins')();
 var browserify = require('browserify');
 var watchify = require('watchify');
-var sass = require('gulp-ruby-sass')
+var sass = require('gulp-ruby-sass');
 var source = require('vinyl-source-stream'),
     
     sourceFile = './app/scripts/app.js',
@@ -28,7 +28,7 @@ gulp.task('styles', function () {
             loadPath: ['app/bower_components']
         })
         .pipe($.autoprefixer('last 1 version'))
-        .pipe(gulp.dest('dist/styles'))
+        .pipe(gulp.dest('app/styles/main.css'))
         .pipe($.size());
 });
 
