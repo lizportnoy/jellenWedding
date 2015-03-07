@@ -5,31 +5,31 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <title>Jellen4Eva - James Portnoy and Ellen Johnson</title>
+        <title>Jellen4Eva - James Portnoy and Ellen Johnson wedding</title>
         <meta name="description" content="Jellen Wedding - James Portnoy Ellen Johnson Wedding">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="icon"  href="favicon.ico" >
         <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/jquery.fancybox-1.3.4.css">
         <link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+        <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script> 
+        <script src="bower_components/jquery.localscroll/jquery.localscroll.min.js" type="text/javascript"></script> 
+        <script src="bower_components/jquery.scrollTo/jquery.scrollTo.min.js" type="text/javascript"></script> 
+        <link rel="stylesheet" href="lightbox/lightbox.css" type="text/css" media="screen" />
+        <script type="text/javascript" src="lightbox/lightbox.js"></script>
         <script type="text/javascript" src="scripts/app.js"></script>
-        <script type="text/javascript" src="scripts/jquery.fancybox-1.3.4.pack.js"></script>
-        <script type="text/javascript" src="scripts/jquery.mousewheel-3.0.4.pack.js"></script>
-        <script type="text/javascript" src="scripts/jquery.scrollTo-min.js"></script>
     </head>
     <body>
 
     <div id="header">
     <ul id="navigation">
-        <li class="home-nav" onclick="scrollNav('.home')">Jellen</li>
-        <li class="pictures-nav" onclick="scrollNav('.pictures')">Pictures</li>
-        <li class="story-nav" onclick="scrollNav('.story')">Our Story</li>
-        <li class="info-nav" onclick="scrollNav('.info')">Event Info</li>
-        <li class="party-nav" onclick="scrollNav('.party')">Wedding Party</li>
-        <li class="gifts-nav" onclick="scrollNav('.gifts')">Gifts</li>
+        <a href="#homeLink"><li class="home-nav">Jellen</li></a>
+        <a href="#pictureLink"><li class="pictures-nav">Pictures</li></a>
+        <a href="#storyLink"><li class="story-nav">Our Story</li></a>
+        <a href="#infoLink"><li class="info-nav" >Event Info</li></a>
+        <a href="#partyLink"><li class="party-nav" >Wedding Party</li></a>
+        <a href="#giftLink"><li class="gifts-nav">Gifts</li></a>
     </ul>
     </div>
 
@@ -38,6 +38,7 @@
         <div class="home slide">
             &nbsp;
             <div class="content-box">
+                <a name="homeLink"></a>
                 <h1 class="jellen">Jellen Wedding</h1>
                 <h1 class="date"> 10 . 10 . 2015 </h1>
                 <h2 class="clickBelow"><span>Click</span><img src="images/down-arrow.png" ><span>Below</span></h2>
@@ -47,31 +48,29 @@
     <!-- Pictures Frame -->
 
         <div class="pictures slide">
+            <a name="pictureLink"></a>
             <div class="content-box">
                 
-                <div class="pictures-title"><h1>Pictures</h1></div>
+                <h1 class="jellen pictures">Pictures</h1>
                 
                 <h2 class="gallery-title">Click on the boxes</h2>
-                
+                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2836.jpg" rel="lightbox" ><img class="photo one" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2836.jpg" title=""></a>
+                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2857.jpg" rel="lightbox" ><img class="photo two" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2857.jpg" title=""></a>
+                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2928.jpg" rel="lightbox" ><img class="photo three" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2928.jpg" title=""></a>
+                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3047.jpg" rel="lightbox" ><img class="photo four" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3047.jpg" title=""></a>
+                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3106.jpg" rel="lightbox" ><img class="photo five" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3106.jpg" title=""></a>
+                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3145.jpg" rel="lightbox" ><img class="photo six" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3145.jpg" title=""></a>
+                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3183.jpg" rel="lightbox" ><img class="photo seven" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3183.jpg" title=""></a>
+                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3252.jpg" rel="lightbox" ><img class="photo eight" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3252.jpg" title=""></a>
+                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3276.jpg" rel="lightbox" ><img class="photo nine" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3276.jpg" title=""></a>
+                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3222.jpg" rel="lightbox" ><img class="photo ten" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3222.jpg" title=""></a>
+                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3149.jpg" rel="lightbox" ><img class="photo eleven" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3149.jpg" title=""></a>
+                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3136.jpg" rel="lightbox" ><img class="photo twelve" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3136.jpg" title=""></a>
+                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3066.jpg" rel="lightbox" ><img class="photo thirteen" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3066.jpg" title=""></a>
+                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2992.jpg" rel="lightbox" ><img class="photo fourteen" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2992.jpg" title=""></a>
+                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2895.jpg" rel="lightbox" ><img class="photo fifteen" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2895.jpg" title=""></a>
+                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2838.jpg" rel="lightbox" ><img class="photo sixteen" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2838.jpg" title=""></a>
                 <div class="gallery">
-                    <a class="photo one" rel="story-gallery" href="images/gallery/ss-01.jpg" title="">Photo<span></span></a>
-                    <a class="photo two" rel="story-gallery" href="images/gallery/ss-02.jpg" title="">Photo<span></span></a>
-                    <a class="photo three" rel="story-gallery" href="images/gallery/ss-03.jpg" title="">Photo<span></span></a>
-                    <a class="photo four" rel="story-gallery" href="images/gallery/ss-04.jpg" title="">Photo<span></span></a>
-                    <a class="photo five" rel="story-gallery" href="images/gallery/ss-05.jpg" title="">Photo<span></span></a>
-                    <a class="photo six" rel="story-gallery" href="images/gallery/ss-06.jpg" title="">Photo<span></span></a>
-                    <a class="photo seven" rel="story-gallery" href="images/gallery/ss-07.jpg" title="">Photo<span></span></a>
-                    <a class="photo eight" rel="story-gallery" href="images/gallery/ss-08.jpg" title="">Photo<span></span></a>
-                    <a class="photo nine" rel="story-gallery" href="images/gallery/ss-09.jpg" title="">Photo<span></span></a>
-                    <a class="photo ten" rel="story-gallery" href="images/gallery/ss-10.jpg" title="">Photo<span></span></a>
-                    <a class="photo eleven" rel="story-gallery" href="images/gallery/ss-11.jpg" title="">Photo<span></span></a>
-                    <a class="photo twelve" rel="story-gallery" href="images/gallery/ss-12.jpg" title="">Photo<span></span></a>
-                    <a class="photo thirteen" rel="story-gallery" href="images/gallery/ss-13.jpg" title="">Photo<span></span></a>
-                    <a class="photo fourteen" rel="story-gallery" href="images/gallery/ss-14.jpg" title="">Photo<span></span></a>
-                    <a class="photo fifteen" rel="story-gallery" href="images/gallery/ss-15.jpg" title="">Photo<span></span></a>
-                    <a class="photo sixteen" rel="story-gallery" href="images/gallery/ss-16.jpg" title="">Photo<span></span></a>
-                    <a class="photo seventeen" rel="story-gallery" href="images/gallery/ss-17.jpg" title="">Photo<span></span></a>
-                    <a class="photo eighteen" rel="story-gallery" href="images/gallery/ss-18.jpg" title="">Photo<span></span></a>
                 </div>
             
             </div>
@@ -81,8 +80,11 @@
 
         <div class="story slide">
             <div class="content-box">
+            <a name="storyLink"></a>
                 
-                <div class="story-title"><h1>Our Story</h1></div>
+                <div class="story-title">
+                    <h1 class="jellen">Our Story</h1>
+                </div>
                 
                 <h2>Rollover the timeline</h2>
                 
@@ -135,42 +137,25 @@
 
         <div class="info slide">
             <div class="content-box">
+            <a name="infoLink"></a>
             
-                <div class="info-title"><h1>Event Info</h1></div>
+                <div>
+                    <h1 class="jellen">Event Info</h1>
+                </div>
                 
                 <div class="map-content">
-                    <img class="map" src="images/map.png" alt="Map">
+                    <iframe width='100%' height='110%' frameBorder='0' src='https://a.tiles.mapbox.com/v4/lizport10.kghhb1if/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoibGl6cG9ydDEwIiwiYSI6IkNnaGZuam8ifQ.ytq8ZMrhPrnoWQsPnfkZMQ'></iframe>
                 </div>
                 
                 <div class="info-content">
-                    <h2>Lord Hill Farms</h2>
-                    <h3>Ceremony at 5:30</h3>
-                    <h3>Dinner and dancing to follow</h3>
-                    
+                    <a href="http://www.ariampls.com" target="_blank"><h2>Aria Minneapolis</h2></a>
+                    <h3>Ceremony begins at 5:30PM</h3>
+                    <p class="weddingDescription">Both the ceremnoy and reception will take place inside the Aria.  Dinner and dancing will follow shortly after. Bring your dancing shoes and get ready to get down to the sweet tunes of Hookers and Blow. Hotel blocks are available at the <a href="http://www.wminneapolishotel.com/" target="_blank">The W</a>, the <a href="http://www.starwoodhotels.com/westin/property/overview/index.html?propertyID=1723" target="_blank">Westin</a>, or the <a href="http://www.sheratonminneapolismidtown.com/" target="_blank">Sheraton</a>.</p>
                     <div class="more-info">
-                    <a class="info btn" id="getmore-info" href="#inline1" title="">More Event Info<span></span></a> 
+                        <a href="http://bit.ly/1BeuJNn" target="_blank" class="info btn">Driving Directions<span></span></a> 
                     </div>
-                    
-                    <div style="display: none;">
-                        <div id="inline1" style="width:600px;height:550px;overflow:auto;">
-                        <p>The ceremony will begin at 5:30pm and will take place outside, weather permitting.  Dinner and dancing will follow shortly after.  Bring your party pants/dresses people, it’s going to be a good ole’ time. Dress is semiformal; bow ties and/or bolo ties are encouraged.</p>
-    <div class="line-seperator"></div>
-    <p>Lord Hill Farms is located in Snohomish, about 45 minutes north of Seattle.  Please allow between 45 and 60 minutes travel time to reach Lord Hill Farms if leaving from Seattle (it’s awkward being late to a wedding, isn’t it?). Ample parking will be available on site.</p>
-    <p>Beer and Wine will be served at the reception by a licensed bartender. If you are over the age of 21 and wish to partake, please make sure to bring your ID with you.</p>
-    <div class="line-seperator"></div>
-    <p>If you are joining us from out of town, you may wish to book a hotel reservation.  Some hotels we can recommend that are located closer to the venue include:</p>
-    <p>•    <a href="http://www.guesthouseintl.com" target="_blank">Guesthouse Inn &amp; Suites Monroe</a> ($)<br>
-    •   <a href="http://hiltongardeninn3.hilton.com" target="_blank">Hilton Garden Inn Seattle/Bothell</a> ($$)<br>
-    •   <a href="http://www.willowslodge.com/index.html" target="_blank">Willows Lodge Woodinville</a> ($$$)</p>
-    <p>Many other lodging accommodations are available closer to downtown Seattle; we recommend you look for lodging there if you’re planning on exploring the city a bunch over the weekend.</p>
-    <div class="line-seperator"></div>
-    <p>Any questions, comments, concerns, playlist requests, or accommodation inquiries, feel free to contact Katie or Luke: <a href="mailto:katieplusluke@gmail.com">katieplusluke@gmail.com</a></p>
-
-                        </div>
-                    </div>
-                    
-                    <div class="get-directions">
-                    <a href="http://goo.gl/maps/V1XY" target="_blank" class="directions btn">Driving Directions<span></span></a> 
+                    <div class="more-info">
+                        <a href="https://www.starwoodmeeting.com/Book/JohnsonPortnoyBlock" target="_blank" class="info btn">W Hotel Block<span></span></a>
                     </div>
                 </div>
                 
@@ -181,22 +166,23 @@
         
         <div class="party slide">
             <div class="content-box">
+            <a name="partyLink"></a>
             
-                <div class="party-title"><h1>The Wedding Party</h1></div>
-                
-                <h2>The people standing beside us!</h2>
+                <div >
+                    <h1 class="jellen">The Wedding Party</h1>
+                </div>
                 
                 <div class="groomsmen">
                     <h3 class="wp-title">Groomsmen</h3>
                     
                     <div class="party-gallery">
-                        <a class="wp one" rel="guys-gallery" href="images/gallery/guys1.jpg" title="BEST MAN: Josiah Brown">Photo One<span></span></a>
-                        <a class="wp two" rel="guys-gallery" href="images/gallery/guys2.jpg" title="Levi Clum">Photo One<span></span></a>
-                        <a class="wp three" rel="guys-gallery" href="images/gallery/guys3.jpg" title="Trevor White">Photo One<span></span></a>
-                        <a class="wp four" rel="guys-gallery" href="images/gallery/guys4.jpg" title="Aaron McConkey">Photo One<span></span></a>
-                        <a class="wp five" rel="guys-gallery" href="images/gallery/guys5.jpg" title="Chris Kyle">Photo One<span></span></a>
-                        <a class="wp six" rel="guys-gallery" href="images/gallery/guys6.jpg" title="Chris Hanke">Photo One<span></span></a>
-                        <a class="wp seven" rel="guys-gallery" href="images/gallery/guys7.jpg" title="Jake Kirkwood">Photo One<span></span></a>
+                       <img class="wp one" rel="guys-gallery" src="images/bestman.jpeg" title="BEST MAN: name">
+                       <img class="wp two" rel="guys-gallery" src="images/bestman.jpeg" title="name">
+                       <img class="wp three" rel="guys-gallery" src="images/bestman.jpeg" title="name">
+                       <img class="wp four" rel="guys-gallery" src="images/bestman.jpeg" title="name">
+                       <img class="wp five" rel="guys-gallery" src="images/bestman.jpeg" title="name">
+                       <img class="wp six" rel="guys-gallery" src="images/bestman.jpeg" title="name">
+                       <img class="wp seven" rel="guys-gallery" src="images/bestman.jpeg" title="name">
                     </div>
                 </div>
                 
@@ -204,13 +190,13 @@
                     <h3 class="wp-title">Bridesmaids</h3>
                     
                     <div class="party-gallery">
-                        <a class="wp one" rel="girls-gallery" href="images/gallery/girls1.jpg" title="MAID OF HONOR: Ashlea Holcomb">Photo One<span></span></a>
-                        <a class="wp two" rel="girls-gallery" href="images/gallery/girls2.jpg" title="MATRON OF HONOR: Mali Hawkins">Photo One<span></span></a>
-                        <a class="wp three" rel="girls-gallery" href="images/gallery/girls3.jpg" title="Heidi Clum">Photo One<span></span></a>
-                        <a class="wp four" rel="girls-gallery" href="images/gallery/girls4.jpg" title="Amy Archibald">Photo One<span></span></a>
-                        <a class="wp five" rel="girls-gallery" href="images/gallery/girls5.jpg" title="Kashley Ricedorff">Photo One<span></span></a>
-                        <a class="wp six" rel="girls-gallery" href="images/gallery/girls6.jpg" title="Beth Buer">Photo One<span></span></a>
-                        <a class="wp seven" rel="girls-gallery" href="images/gallery/girls7.jpg" title="Kate Spencer">Photo One<span></span></a>
+                        <img class="wp one" rel="girls-gallery" src="images/bridesmaid.jpg" title="BEST MAN: name">
+                        <img class="wp two" rel="girls-gallery" src="images/bridesmaid.jpg" title="name">
+                        <img class="wp three" rel="girls-gallery" src="images/bridesmaid.jpg" title="name">
+                        <img class="wp four" rel="girls-gallery" src="images/bridesmaid.jpg" title="name">
+                        <img class="wp five" rel="girls-gallery" src="images/bridesmaid.jpg" title="name">
+                        <img class="wp six" rel="girls-gallery" src="images/bridesmaid.jpg" title="name">
+                        <img class="wp seven" rel="girls-gallery" src="images/bridesmaid.jpg" title="name">
                     </div>
                 </div>
                 
@@ -220,48 +206,39 @@
     <!-- Gifts Frame -->
         
         <div class="gifts slide">
+
             <div class="content-box">
+                <a name="giftLink"></a>
                 
-                <div class="gifts-title"><h1>Gifts &amp; Registry</h1></div>
-                
-                
-                <h2>Check out our registry</h2>
-                
-                <div class="registry-imgs">
-                    <a href="http://www.williams-sonoma.com/registry/3056782/registry-list.html" target="_blank" class="registry wsonoma">Williams Sonoma<span></span></a>
-                    <a href="http://www.target.com/RegistryGiftGiverCmd?isPreview=false&amp;status=completePageLink&amp;listId=w-kmr8yaw1RCfNeRX30htQ&amp;registryType=WD&amp;cumulativeTime=-1&amp;isAjax=false&amp;noOfPings=" target="_blank" class="registry target">Target<span></span></a>
-                    <a href="http://www.bedbathandbeyond.com/regGiftRegistry.asp?wrn=-1555599720&amp;" target="_blank" class="registry bbeyond">Bed Bath &amp; Beyond<span></span></a>
-                    <a href="http://www.potterybarn.com/registry/3056781/registry-list.html" target="_blank" class="registry pbarn">Pottery Barn<span></span></a>
+                <div>
+                <h1 class="jellen">Gifts &amp; Registry</h1>
                 </div>
                 
                 
-                
+                <h2>Check out our registry <a class="registry" href="http://registry.theknot.com/ellen-johnson-james-portnoy-october-2015-mn/9985183" target="_blank"> here </a></h2>
+                <div class="allregister">
+                    <div class="registry">
+                        <img src="images/macys.png">
+                    </div>
+                     <div class="registry">
+                        <img src="images/crate-and-barrel.jpg">
+                    </div>
+                     <div class="registry">
+                        <img src="images/williams_sonoma_logo.jpg">
+                    </div>
+                </div>             
             </div>
         </div>
         
     <!-- Bottom Nav --> 
         
         <div id="bottom-nav">
-        <img src="images/down-arrow.png" alt="Next">
+            <img src="images/down-arrow-darker.png" alt="Next">
             <div id="next">
                 <img src="images/down-arrow.png" alt="Next">
             </div>
-        </div>
-        
+        </div>    
     <!-- Footer --> 
-        
-        <div id="footer">
-            <div class="social">
-            <div class="like">
-            <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.katieplusluke.com&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowtransparency="true"></iframe>
-            </div>
-            <div class="tweet">
-                <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="http://platform.twitter.com/widgets/tweet_button.b44aac737ba5fb3711801841c2833c12.en.html#_=1425663359709&amp;count=horizontal&amp;dnt=true&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fwww.katieplusluke.com%2F&amp;size=m&amp;text=Katie%20%2B%20Luke%20%7C%20We%27re%20Getting%20Married!&amp;url=http%3A%2F%2Fwww.katieplusluke.com%2F&amp;via=lukeclum" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 109px; height: 20px;"></iframe>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-            </div>
-            <a class="luke-logo" href="http://www.lukeclum.com">www.lukeclum.com<span></span></a>
-            </div>
-        </div>
 
-    <div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><span style="height: 20px; width: 40px; min-height: 20px; min-width: 40px; position: absolute; opacity: 0.85; z-index: 8675309; display: none; cursor: pointer; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAADU0lEQVR42s2WXUhTYRjHz0VEVPRFUGmtVEaFUZFhHxBhsotCU5JwBWEf1EWEEVHQx4UfFWYkFa2biPJiXbUta33OXFtuUXMzJ4bK3Nqay7m5NeZq6h/tPQ+xU20zugjOxR/+7/O8539+5znnwMtNTExwJtMb3L/fiLv3botCSmUjeCaejTOb39AiFothfHxcFIrHY8RksZjBsckJcOIRMfFsHD/SsbExUYpnI8DR0dGUGjSb0byhEJp5Uqg5CTSzc2CQleJbMEj9/ywBcGRkJEk9DQqouEVQT1sK444yWI9UonmTjGqauVLEIlHa9x8lAMbj8SSpp0rwKGMVvg8P46vbg0C7na8z8JsMcgHe7jlEa+edRhiLy8n/TUMfu6EvLElk+U0WtGwrTrdfAGQf5J8iiK4LVzDU28t8JtMSocf8E+l68myaNFXm/6rXslLK7ay5TOunuRvZWpJuvwAYjUaTpOIWoquuAZ219RTaxKYp9BbjycoN5FvL9qH9TBX5rvoGdJythvXYSTxdtRnWylO/ZdqrLsGwszzhWQ593z2KlAwCYCQSSZJ6ehZ0W7bD9VBLgN0NCqr3qR7R2rBrL3pu3Sb/7nDlz2uy6cG0OXk0GTbZXzNp8trsPAQdTj6frlWzN2DcXZGKQQAMh8NJ6rpyHe+PnkCr/CAFdZyvpfpjuvkifLF9wIt1Wwlo0OHie1RvWrKa93RjzfzliTzPKz3ltB0/Tevmwp14wGUgHAzSOoUEwFAolFaaBSuhnslPRkJexUJtZ6v5HtUeLswl33n1BgEY5fvhs9sJ3FAiT+QYyyvoAQJuD0KBAFRTJNAuz5/s3gJgMBhMJwrVFRThM5tY5zUF/A4X1f2fvQTRLCuBreoim0YmAbqNJryvPEXeeq46kaNdkQ/1HCncbJKPs9ZSv2VHGfWsZ2hfkhKAfr8/pdxWKx4wwD69PmVfNSOL+lr2w+gYqHpWDtXt1xQ8AMlWU0e1lqLd/APRHoP8AJqWrQG9gYxcPMsvSJUvAA4MDKTUJ7MZLaVy8v+qT21tcDx/OemePr0RTkNrur4A6PP5xCgBsL+/X4wiQDpuuVxOeL1eMYmYeDY6sOp0z+B0OuHxeEQhxkJMFosJiSO/UinOI/8Pc+l7KKArAT8AAAAASUVORK5CYII=);"></span></body>
+</body>
 </html>

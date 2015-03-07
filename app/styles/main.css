@@ -1,47 +1,25 @@
-@font-face {
-    font-family: 'BlanchCapsRegular';
-    src: url('fonts/blanch_caps-webfont.eot');
-    src: url('fonts/blanch_caps-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/blanch_caps-webfont.woff') format('woff'),
-         url('fonts/blanch_caps-webfont.ttf') format('truetype'),
-         url('fonts/blanch_caps-webfont.svg#BlanchCapsRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'PacificoRegular';
-    src: url('Pacifico-webfont.eot');
-    src: url('Pacifico-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Pacifico-webfont.woff') format('woff'),
-         url('Pacifico-webfont.ttf') format('truetype'),
-         url('Pacifico-webfont.svg#PacificoRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* FONT & TEXT STYLES */
 
 
 h1 {
   padding:0;
-  font-family: 'BlanchCapsRegular', arial;
+  font-family:'Handlee', arial;
   font-size:3em;
   font-weight:normal;
 }
 
 h1.jellen {
-  margin: .2em auto;
+  margin: 2em auto .5em auto;
   font-size: 6em;
   color: white;
   font-family: 'Satisfy', cursive;
   text-align: center;
+  text-shadow: 1px 1px 1px rgba(110,114,113, .2);
 }
 
 h1.date {
-  color: #ABDDC6;
-  width: 55%;
+  color: #B6F9C9;
+  width: 50%;
   font-size: 4em;
   line-height: 1em;
   font-weight: bold;
@@ -58,22 +36,22 @@ h2.clickBelow {
 } 
 
 h2{
-  font-family: 'Pacifico', 'PacificoRegular', cursive;
+  font-family: 'Satisfy' ,cursive;
   font-size:2.5em;
   font-weight:400;
   font-style:normal;
   margin:.75em; 
 }
 h3 {
-  font-family: 'BlanchCapsRegular', arial;
+  font-family:'Handlee', arial;
   font-size:2.65em;
   font-weight:normal;
   color:#FFFFFF;
-  margin:20px 0px 20px 0;
+  margin:1em 0px 1em 0;
   
 }
 h4 {
-  font-family: 'BlanchCapsRegular', arial;
+  font-family:'Handlee', arial;
   font-size:1.5em;
   font-weight:normal;
   color:rgb(225,86,97);
@@ -109,17 +87,19 @@ body {
   margin:0; padding:0;
   font-family:Arial, Helvetica, sans-serif;  
     background-color:#3ba7b8;  
-    font-size:1em;  
-    line-height:25px;  
+    font-size:18px;  
+    line-height:1.25em;
+    overflow-x: hidden;
 }  
   
   
 .content-box{
   position:absolute; 
-  top:50%; 
+  top:25%; 
   left:50%;
-  width:900px;
-  margin-left:-450px;
+  width:45em;
+  margin-left: auto;
+  margin-left:-22.5em;
 }
 
 .container {
@@ -130,13 +110,11 @@ body {
 }
 
 .slide {
-  height: 125%;
+  height: 100%;
   position: relative;
   margin: 0;
   padding: 0;
 }
-
-
 
 /* NAVIGATION */
 
@@ -144,7 +122,7 @@ body {
   position: fixed; 
   top: 0; left: 0; 
   width: 100%; 
-  height: 63px;
+  height: 3.1em;
   margin:0;
   background-color:#6E7271;
   filter:alpha(opacity=70);
@@ -157,6 +135,10 @@ ul#navigation {
   padding:0;
   text-align:center;
   cursor: pointer;
+}
+ul#navigation a {
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
 }
 ul#navigation li {  
     display:inline; 
@@ -175,103 +157,32 @@ ul#navigation li:hover {
 }
 
 
-/* FOOTER */
-
-#footer {
-  z-index:100;
-  position:fixed;
-  bottom:0;
-  background-color:#6E7271;
-  width:12em;
-  height:2.5em;
-  margin:.5em;
-  right:0;
-  opacity: .5;
-  filter:alpha(opacity=50);
-  -webkit-transition: opacity 0.5s;
-  -moz-transition:    opacity 0.5s;
-  -o-transition:      opacity 0.5s;
-  -ms-transition:     opacity 0.5s;
-  cursor: pointer;
-}
-#footer:hover {
-  opacity: 1;
-  filter:alpha(opacity=100);
-  }
-.social{
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
-  left:0;
-  right:0;
-  width:10.5em;
-}
-.like {
-  float:left; 
-  width:3.75em; 
-  margin:.1em;
-  height: 1em;
-  padding:13px 5px 0 0;
-}
-.tweet {
-  float:left; 
-  width:3.75em; 
-  margin:.1em;
-  height:1em;
-  padding:13px 0 0 5px;
-}
-.luke-logo {  
-  display:block;
-  position: relative;
-  text-indent: -9999px;
-  width: 23px;
-  height: 23px;
-  float:left;
-  margin:13px 0 15px 15px;
-
-}
-
-.luke-logo span {
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-  background: url(images/luke-logo.png) no-repeat;
-  opacity: .8;
-  filter:alpha(opacity=80);
-  -webkit-transition: opacity 0.5s;
-  -moz-transition:    opacity 0.5s;
-  -o-transition:      opacity 0.5s;
-  -ms-transition:     opacity 0.5s;
-}
-.luke-logo:hover span {
-  opacity: 1;
-  filter:alpha(opacity=100);
-}
-
 /* BOTTOM NAVIGATION */
 
 #bottom-nav {
-  z-index:100;
+  z-index:30;
   position:fixed;
-  bottom:0px;
+  bottom:0;
   width:100%;
-  height:70px;
+  height:3.5em;
   margin:0;
-}   
+}
+
 #bottom-nav img{
   display:block;
   margin:0 auto;
-  margin-top:10px;
+  margin-top:.5em;
+  padding-right: .92em;
   opacity: .2;
   filter:alpha(opacity=20);
 }
 #next{
-  z-index:100;
+  z-index:30;
   position:fixed;
-  bottom:0px;
+  bottom:0;
   width:100%;
-  height:70px;
+  height:3.5em;
   margin:0;
-  background: url(images/footer-slice.png) repeat-x;
   cursor: pointer;
   opacity: 0;
   filter:alpha(opacity=0);
@@ -289,7 +200,7 @@ ul#navigation li:hover {
   position:relative;
   margin-left:auto;
   margin-right:auto;
-  margin-top:10px;
+  margin-top:.5em;
   left:0;
   right:0;
   opacity: 1;
@@ -298,7 +209,7 @@ ul#navigation li:hover {
 #next .box{
   position:absolute;
   width:100%;
-  height:170px;
+  height:8.5em;
   margin:0;
   background-color:#6E7271;
   opacity: 1;
@@ -307,51 +218,29 @@ ul#navigation li:hover {
 
 /* HOME SLIDE */
 
-
-
 .home {
-  background-color: rgb(171,221,198);
+  background-color: #B6F9C9;
 }
 
 .home .content-box{
-  height:340px; 
-  margin-top:-187px;
+  height:17em; 
+  margin-top:-9.1em;
 }
-
-.home-img {  
-  display:block;
-  margin: auto;
-  position: relative;
-  text-indent: -9999px;
-  width: 540px;
-  height: 335px;
-  background: url(images/kl-title.png) no-repeat;
-}
-
 
 /* OUR STORY */
-
-
 
 .story {
   background-color: #A8F9FF;
 }
 
-.story .content-box{
-  height:460px; 
-  margin-top:-260px;
-  }
-
-.story-title {  
-  display:block;
-  margin: auto;
-  position: relative;
-  text-indent: -9999px;
-  width: 785px;
-  height: 75px;
-  background: url(images/title-sprites.png) 0 0;
-  margin-bottom:25px;
+.story .jellen {
+  color: #F4FAFF
 }
+
+.story .content-box{
+  height:23em; 
+  margin-top:-13em;
+  }
 
 .story h2 {
   display:block;
@@ -364,61 +253,80 @@ ul#navigation li:hover {
   position:relative;
   display:block;
   overflow:auto;
-  margin-top:40px;
+  margin-top:2em;
   height:290px;
-  background: url(images/arrow.png) no-repeat;
+  background: url(../images/timeline.png) no-repeat;
   background-position: 0px 0px;
 }
 
 .first {
-  margin-left:100px;
-  margin-top:26px;
+  margin-left:2.75em;
+  background: url(../images/timeline/biking.jpg) no-repeat;
+  background-size: 100%;
 }
 
 .second {
-  margin-left:70px;
-  margin-top:26px;
+  margin-left:.9em;
+  background: url(../images/timeline/timesquare.jpg) no-repeat;
+  background-size: 100%;
 }
 
 .third {
-  margin-left:2.5em;
-  margin-top:26px;
+  margin-left:.9em;
+  background: url(../images/timeline/minnesota.jpg) no-repeat;
+  background-size: 100%;
 }
 
 .fourth {
-  margin-left:90px;
-  margin-top:26px;
+  margin-left:.9em;
+  background: url(../images/timeline/nye.jpg) no-repeat;
+  background-size: 100%;
 }
 
 .fifth {
-  margin-left:2.5em;
-  margin-top:26px;
+  margin-left:.9em;
+  background: url(../images/timeline/date.jpg) no-repeat;
+  background-size: 100%;
 }
 
 .sixth {
-  margin-left:80px;
-  margin-top:26px;
+  margin-left:.9em;
+  background: url(../images/timeline/mustache.jpg) no-repeat;
+  background-size: 100%;
 }
 .seventh {
-  margin-left:1em;
-  margin-top:26px;
+  margin-left:.9em;
+  background: url(../images/timeline/engaged.jpg) no-repeat;
+  background-size: 100%;
+}
+.eight {
+  margin-left:.9em;
+  background: url(../images/timeline/skiing.jpg) no-repeat;
+  background-size: 100%;
+}
+.ninth {
+  margin-left:.9em;
+  background: url(../images/timeline/sparklers.jpg) no-repeat;
+  background-size: 100%;
 }
 
 .heart {  
   display:block;
   position: relative;
   text-indent: -9999px;
-  width: 46px;
-  height: 44px;
-  background: url(images/heart.png) no-repeat;
-    float:left;
-    cursor: pointer;   
+  margin-bottom: 1em;
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 4em;
+  -webkit-border-radius: 4em;
+  -moz-border-radius: 4em;
+  float:left;
+  cursor: pointer;   
 }
 
 .heart span {
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
-  background: url(images/heart.png) no-repeat;
   background-position: -46px 0;
   opacity: 0;
   filter:alpha(opacity=0);
@@ -433,14 +341,17 @@ ul#navigation li:hover {
 }
 .highlights h4 {
   display:none;
-    position:absolute;
-    background-color: rgb(230,230,230);
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    width:550px;
-    top:80px;
+  position:absolute;
+  background-color: #F4FAFF;
+  color: #6E7271;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width:550px;
+  top:80px;
+  padding: 1em;
+  font-size: 1.2em;
   text-align: center;
   opacity: 0;
   filter:alpha(opacity=0);
@@ -455,8 +366,8 @@ ul#navigation li:hover {
   filter:alpha(opacity=100);  
 }
 .highlights h4 span{
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 2em;
+  line-height: 1.3em;
 }
 
 
@@ -467,23 +378,18 @@ ul#navigation li:hover {
 
 .pictures {
   background-color: #F4FAFF;
+  color: #B6F9C9;
+}
+.jellen.pictures {
+  margin-top: 0;
+  color: #B6F9C9;
 }
 
 .pictures .content-box{
-  height:290px; 
-  margin-top:-180px;
-  }
-
-.pictures-title {  
-  display:block;
-  margin: auto;
-  position: relative;
-  text-indent: -9999px;
-  width: 320px;
-  height: 75px;
-  background: url(images/pictures.png) 0 0;
-  margin-bottom:25px;
+  height:14.5em; 
+  margin-top:-2em;
 }
+
 .gallery-title{
   font-size:35px;
   margin-bottom:25px;
@@ -496,98 +402,24 @@ ul#navigation li:hover {
   display:block;
   overflow:auto;
   margin-top:.75em;
-  width:564px;
-  height:125px;
+  width:100%;
+  height:100%;
   margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
+
 .photo {  
   display:block;
   position: relative;
-  text-indent: -9999px;
-  width: 51px;
-  height: 51px;
-  background: url(images/pthumb-sprite.jpg) no-repeat;
-    float:left;
-    margin-right:5px;
-    margin-left:5px;
-    margin-top:10px;   
+  width: 4.25em;
+  height: 4.25em;
+  float:left;
+  margin-right:.6em;
+  margin-left:.6em;
+  margin-top:1em;   
 }
-
-.photo span {
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-  background: url(images/pthumb-sprite.jpg) no-repeat;
-  background-position: -51px 0;
-  opacity: 0;
-  filter:alpha(opacity=0);
-  -webkit-transition: opacity 0.5s;
-  -moz-transition:    opacity 0.5s;
-  -o-transition:      opacity 0.5s;
-  -ms-transition:     opacity 0.5s;
-}
-.photo:hover span {
-  opacity: 1;
-  filter:alpha(opacity=100);
-}
-
-.gallery .one span {
-  background: url(images/pthumb-sprite.jpg) -51px 0;
-}
-.gallery .two span {
-  background: url(images/pthumb-sprite.jpg) -102px 0;
-}
-.gallery .three span {
-  background: url(images/pthumb-sprite.jpg) -153px 0;
-}
-.gallery .four span {
-  background: url(images/pthumb-sprite.jpg) -204px 0;
-}
-.gallery .five span {
-  background: url(images/pthumb-sprite.jpg) -255px 0;
-}
-.gallery .six span {
-  background: url(images/pthumb-sprite.jpg) -306px 0;
-}
-.gallery .seven span {
-  background: url(images/pthumb-sprite.jpg) -357px 0;
-}
-.gallery .eight span {
-  background: url(images/pthumb-sprite.jpg) -408px 0;
-}
-.gallery .nine span {
-  background: url(images/pthumb-sprite.jpg) -459px 0;
-}
-.gallery .ten span {
-  background: url(images/pthumb-sprite.jpg) -510px 0;
-}
-.gallery .eleven span {
-  background: url(images/pthumb-sprite.jpg) -561px 0;
-}
-.gallery .twelve span {
-  background: url(images/pthumb-sprite.jpg) -612px 0;
-}
-.gallery .thirteen span {
-  background: url(images/pthumb-sprite.jpg) -663px 0;
-}
-.gallery .fourteen span {
-  background: url(images/pthumb-sprite.jpg) -714px 0;
-}
-.gallery .fifteen span {
-  background: url(images/pthumb-sprite.jpg) -765px 0;
-}
-.gallery .sixteen span {
-  background: url(images/pthumb-sprite.jpg) -816px 0;
-}
-.gallery .seventeen span {
-  background: url(images/pthumb-sprite.jpg) -867px 0;
-}
-.gallery .eighteen span {
-  background: url(images/pthumb-sprite.jpg) -918px 0;
-}
-
 
 
 /* EVENT INFO */
@@ -595,56 +427,82 @@ ul#navigation li:hover {
 
 
 .info {
-  background-color: #9EA3C0;
+  background-color: #E8AEB7;
+}
+
+.info .jellen {
+  color: #A8F9FF;
+  margin-bottom: .5em;
+  margin-top: 1.5em;
 }
 
 .info .content-box{
-  height:450px; 
-  margin-top:-260px;
-  }
+  height:22.5em;
+  width: 55em;
+  margin-top:-13em;
+  margin-left: -25em;
+}
 
-.info-title {  
-  display:block;
-  margin: auto;
-  position: relative;
-  text-indent: -9999px;
-  width: 785px;
-  height: 75px;
-  background: url(images/title-sprites.png) 0 -75px;
-  margin-bottom:2.5em;
+.info a {
+  text-decoration: none;
+}
+
+.info a h2:hover {
+  color:#A8F9FF;
 }
 
 .map-content{
   float:left;
-  width:451px;
-  height:311px;
+  width:15em;
+  height:15.5em;
+  margin-top: 1em;
 }
 .info-content{
   float:left;
-  width:420px;
-  height:311px;
-  padding-left:29px;
+  width: 35em;
+  height:15.5em;
+  padding-left:1.5em;
 }
 .info-content h2{
   margin-left:0;
-  margin-bottom:1.5em;
-  color:rgb(248,191,84);
+  margin-bottom:.7em;
+  font-size: 2.5em;
+  text-shadow: rgb(0,138,160) 0 0 0;
+  color: white;
 }
 .info-content h3{
   margin:0;
   margin-bottom:16px;
+  font-size: 2em;
+  line-height: 1.1em;
 }
 .more-info{
   clear:both;
-  margin-top:52px;
-  width:420px;
+  margin:2em 0;
+  display: inline-block;
+  width: 15em;
+  padding: 0;
 }
-#inline1 {
-  padding:25px;
+
+p.weddingDescription {
+  color: white;
+  font-family:'Handlee', arial;
+  font-size: 1.2em;
+  line-height:1.2em;
+  margin: 0;
+  padding:0;
 }
-#inline1 span{
-  text-align: center;
+
+.weddingDescription a{
+  font-size: 1.2em;
+  color: white;
 }
+.weddingDescription a:hover {
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+}
+
 .line-seperator{
   display:block;
   margin:auto;
@@ -654,20 +512,15 @@ ul#navigation li:hover {
   width:450px;
   background:#bbbbbb;
 }
-.get-directions{
-  clear:both;
-  margin-top:43px;
-  width:420px;
-}
+
 .btn{
   position:relative;
   margin:0;
   text-align:center;
-  font-family: 'BlanchCapsRegular', arial;
-  font-size:55px;
+  font-family:'Handlee', arial;
+  font-size:1.5em;
   font-weight:normal;
   text-decoration:none;
-   
    -webkit-transition-property:color, background-color;  
    -webkit-transition-duration: .5s, .5s;  
    -webkit-transition-timing-function: linear, ease-in;
@@ -683,26 +536,16 @@ ul#navigation li:hover {
 }
 
 .info.btn{
-  padding: 10px 95px 10px 95px;
-  background-color:rgb(248,191,84);
+  padding: .25em .5em;
+  border-radius: .2em;
+  background-color:#A8F9FF;
   color:#FFFFFF;
 }
 
 .info.btn:hover {
-  color: rgb(220,79,83);
+  color: #E8AEB7;
   background-color:#FFFFFF;
 }
-.directions.btn{
-  padding: 10px 79px 10px 79px;
-  background-color:rgb(248,191,84);
-  color:#FFFFFF;
-}
-.directions.btn:hover {
-  color: rgb(220,79,83);
-  background-color:#FFFFFF;
-}
-
-
 
 /* WEDDING PARTY */
 
@@ -712,10 +555,18 @@ ul#navigation li:hover {
   background-color: #B6F9C9;
 }
 
+
 .party .content-box{
-  height:350px; 
-  margin-top:-210px;
-  }
+  height:22.5em;
+  width: 55em;
+  margin-top:-13em;
+  margin-left: -25em;
+}
+
+.party .jellen {
+  color: #E8AEB7;
+  margin-bottom: .7em;
+}
 
 .party-title {  
   display:block;
@@ -724,296 +575,47 @@ ul#navigation li:hover {
   text-indent: -9999px;
   width: 785px;
   height: 75px;
-  background: url(images/title-sprites.png) 0 -150px;
   margin-bottom:25px;
 }
-.party h2{
-  text-align: center;
-  color: rgb(0,138,160);
-  text-shadow: rgb(0,138,160) 0 0 0;
-}
-.groomsmen{
+
+
+.groomsmen, .bridesmaids{
   display:block;
   position:relative;
-  width:602px;
-  height:60px;
-  padding-top:60px;
-  margin-left:auto;
-  margin-right:auto;
-  left:0;
-  right:0;
-}
-.bridesmaids{
-  display:block;
-  position:relative;
-  width:607px;
-  height:60px;
-  padding-top:.75em;
-  margin-left:auto;
-  margin-right:auto;
+  width:70em;
+  height:8em;
+  margin:1em auto;
   left:0;
   right:0;
 }
 
 .wp-title{
-  font-size:2.5em;
-  margin-top:.75em;
+  font-size:1.5em;
   margin-right:1em;
   float:left;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(110,114,113, .2);
 }
 
 .party-gallery {
   position:relative;
   display:block;
-  overflow:auto;
-  width:427px;
-  height:60px;
+  overflow:hidden;
+  width:50em;
+  height:10em;
+  padding: 0;
+  margin: .5em 0;
 }
 .wp {  
   display:block;
   position: relative;
   text-indent: -9999px;
-  width: 51px;
-  height: 51px;
-  background: url(images/partythumb-sprite.jpg) no-repeat;
-    float:left;
-    margin-right:10px;   
-}
-
-.wp span {
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-  background: url(images/partythumb-sprite.jpg) no-repeat;
-  background-position: -51px 0;
-  opacity: 0;
-  filter:alpha(opacity=0);
-  -webkit-transition: opacity 0.5s;
-  -moz-transition:    opacity 0.5s;
-  -o-transition:      opacity 0.5s;
-  -ms-transition:     opacity 0.5s;
-}
-.wp:hover span {
-  opacity: 1;
-  filter:alpha(opacity=100);
-}
-
-.groomsmen .one span {
-  background: url(images/partythumb-sprite.jpg) -51px 0;
-}
-.groomsmen .two span {
-  background: url(images/partythumb-sprite.jpg) -102px 0;
-}
-.groomsmen .three span {
-  background: url(images/partythumb-sprite.jpg) -153px 0;
-}
-.groomsmen .four span {
-  background: url(images/partythumb-sprite.jpg) -204px 0;
-}
-.groomsmen .five span {
-  background: url(images/partythumb-sprite.jpg) -255px 0;
-}
-.groomsmen .six span {
-  background: url(images/partythumb-sprite.jpg) -306px 0;
-}
-.groomsmen .seven span {
-  background: url(images/partythumb-sprite.jpg) -357px 0;
-}
-
-
-.bridesmaids .one span {
-  background: url(images/partythumb-sprite.jpg) -408px 0;
-}
-.bridesmaids .two span {
-  background: url(images/partythumb-sprite.jpg) -459px 0;
-}
-.bridesmaids .three span {
-  background: url(images/partythumb-sprite.jpg) -510px 0;
-}
-.bridesmaids .four span {
-  background: url(images/partythumb-sprite.jpg) -561px 0;
-}
-.bridesmaids .five span {
-  background: url(images/partythumb-sprite.jpg) -612px 0;
-}
-.bridesmaids .six span {
-  background: url(images/partythumb-sprite.jpg) -663px 0;
-}
-.bridesmaids .seven span {
-  background: url(images/partythumb-sprite.jpg) -714px 0;
-}
-
-
-
-/* RSVP */
-
-
-
-.rsvp {
-  background-color: rgb(0,138,160);
-}
-
-.rsvp .content-box{
-  height:475px; 
-  margin-top:-270px;
-  }
-
-.rsvp-title {  
-  display:block;
-  margin: auto;
-  position: relative;
-  text-indent: -9999px;
-  width: 785px;
-  height: 75px;
-  background: url(images/title-sprites.png) 0 -225px;
-  margin-bottom:25px;
-}
-
-.rsvp h2{
-  text-align: center;
-  color:#FFFFFF;
-  text-shadow: rgb(0,138,160) 0 0 0;
-}
-.rsvp-now{
-  display:block;
-  margin:0 auto;
-  margin-top:1.5em;
-  width:780px;
-  height:240px;
-}
-.labels {
-  position:relative;
+  width: 5em;
+  height: 5em;
   float:left;
-  width:240px;
-  height:240px;
-  margin-top:0px;
-}
-.labels h3{
-  padding-bottom:6px;
-  text-align: right;
-  font-family: 'BlanchCapsRegular', arial;
-  font-size:2.65em;
-  font-weight:normal;
-  color:#FFFFFF;
-  margin:20px 0px 20px 0;
-}
-.guest-name span{
-  color:rgb(248,191,84);
-}
-.forms{
-  position:relative;
-  width:10.5em;
-  height:240px;
-  margin-top:0px;
-  margin-bottom:0px;
-  margin-left:.75em;
-  margin-right:0px;
-  float:left;
-}
-#name-form{
-  width:200px;
-  height:1.5em;
-  font-size:25px;
-  color:#4a4a4a;
-  margin-top:.75em;
-}
-#guest-form{
-  width:200px;
-  height:1.5em;
-  font-size:25px;
-  color:#4a4a4a;
-  margin-top:.75em;
-}
-#attending-form{
-  width:200px;
-  height:1.5em;
-  font-size:25px;
-  color:#4a4a4a;
-  margin-top:.75em;
-}
-#email-form{
-  width:200px;
-  height:1.5em;
-  font-size:25px;
-  color:#4a4a4a;
-  margin-top:.75em;
-}
-.submit-container {
-  position:relative;
-  width:205px;
-  height:240px;
-  margin-top:0px;
-  margin-bottom:0px;
-  margin-left:55px;
-  margin-right:0px;
-  float:left;
-}
-.password {
-  text-align: center;
-  margin-top:1.5em;
-  margin-bottom:.75em;
-  margin-right:0;
-  margin-left:0;
-}
-#password-form{
-  display:block;
-  width:200px;
-  height:1.5em;
-  font-size:25px;
-  color:#4a4a4a;
-  margin:0;
-
-}
-.submit{
-  margin:0;
-  padding:0;
-  width:200px;
-  
-}
-.submit-btn{
-  position:relative;
-  padding: 5px 53px 5px 53px;
-  margin-top:1em;
-  margin-left:0;
-  margin-right:0;
-  margin-bottom:0;
-  background-color:rgb(248,191,84);
-  font-family: 'BlanchCapsRegular', arial;
-  font-size:55px;
-  font-weight:normal;
-  color:#FFFFFF;
-  text-decoration:none;
-  border:0;
-  cursor:pointer;
-   
-   -webkit-transition-property:color, background-color;  
-   -webkit-transition-duration: .5s, .5s;  
-   -webkit-transition-timing-function: linear, ease-in;
-   -moz-transition-property:color, background-color;  
-   -moz-transition-duration: .5s, .5s;  
-   -moz-transition-timing-function: linear, ease-in; 
-   -o-transition-property:color, background-color;  
-   -o-transition-duration: .5s, .5s;  
-   -o-transition-timing-function: linear, ease-in; 
-   -ms-transition-property:color, background-color;  
-   -ms-transition-duration: .5s, .5s;  
-   -ms-transition-timing-function: linear, ease-in; 
+  margin-right:1em;   
 }
 
-.submit-btn:hover {
-  color: rgb(248,191,84);
-  background-color:#FFFFFF;
-  border:0;
-}
-
-.questions{
-  clear:both;
-  margin-top:1em;
-  text-align:center;
-}
-.questions a{
-  color:rgb(248,191,84);
-  text-decoration:none;
-}
 
 /* GIFTS & REGISTRY */
 
@@ -1022,92 +624,37 @@ ul#navigation li:hover {
 .gifts {
   height:100%;
   position: relative;
-  background-color: rgb(230,230,230);
+  background-color: #F4FAFF;
+}
+
+.gifts .jellen {
+  color: #B6F9C9;
+  margin-top: 1.5em;
 }
 
 .gifts .content-box{
-  height:420px; 
-  margin-top:-250px;
+  height:30em; 
+  margin-top:-12.5em;
   }
-
-.gifts-title {  
-  display:block;
-  margin: auto;
-  position: relative;
-  text-indent: -9999px;
-  width: 785px;
-  height: 83px;
-  background: url(images/title-sprites.png) 0 -300px;
-  margin-bottom:25px;
-}
 
 .gifts h2{
   color:rgb(128,128,128);
   text-align: center;
-  margin-bottom:60px;
+  margin-top: 2em;
 }
 
-.registry-imgs{
-  display:relative;
-  margin:0 auto;
-  width:644px;
+.gifts h2 a {
+  color: #A8F9FF;
+  font-size: 1.2em;
 }
 
-.registry {  
-  display:block;
-  position: relative;
-  text-indent: -9999px;
-  width: 282px;
-  height: 99px;
-    float:left;
-    margin-right:1em;
-    margin-left:1em;   
+div.allregister {
+  margin: 1em auto;
 }
 
-.registry span {
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-  background-color: rgb(230,230,230);
-  background: url(images/wsonoma.jpg) no-repeat;
-  background-position: -282px 0;
-  opacity: 0;
-  filter:alpha(opacity=0);
-  -webkit-transition: opacity 0.5s;
-  -moz-transition:    opacity 0.5s;
-  -o-transition:      opacity 0.5s;
-  -ms-transition:     opacity 0.5s;
-}
-.registry:hover span {
-  opacity: 1;
-  filter:alpha(opacity=100);
-}
-
-.wsonoma{
-  background: url(images/wsonoma.jpg) no-repeat;
-}
-.wsonoma span{
-  background: url(images/wsonoma.jpg) no-repeat;
-  background-position: -282px 0;
-}
-.pbarn{
-  background: url(images/pbarn.jpg) no-repeat;
-}
-.pbarn span{
-  background: url(images/pbarn.jpg) no-repeat;
-  background-position: -282px 0;
-}
-.bbeyond {
-  clear:both;
-  background: url(images/bbeyond.jpg) no-repeat;
-}
-.bbeyond span{
-  background: url(images/bbeyond.jpg) no-repeat;
-  background-position: -282px 0;
-}
-.target{
-  background: url(images/target.jpg) no-repeat;
-}
-.target span{
-  background: url(images/target.jpg) no-repeat;
-  background-position: -282px 0;
+div.registry {
+  width: 10em;
+  display: inline-block;
+  margin: 1em 2em;
+  border-radius: 10em;
 }
