@@ -31,11 +31,17 @@
   body {
     font-size: 14px;
   }
+  .collapsing, .in {background-color: rgba(5,9,21,0.5);}
+  ul#navigation li {display: inline-block; width: 45%; }
+
 }
+
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
   body {
     font-size: 12px;
   }
+  .collapsing, .in {background-color: rgba(5,9,21,0.5);}
+  ul#navigation li {display: block;}
 }

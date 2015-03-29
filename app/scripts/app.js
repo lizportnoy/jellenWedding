@@ -13,7 +13,7 @@ $(function() {
         var scroll, i,
                 positions = [],
                 here = $(window).scrollTop(),
-                collection = $('.slide');
+                collection = $('.panel');
 
         collection.each(function() {
             positions.push(parseInt($(this).offset()['top'],10));
@@ -45,4 +45,36 @@ $(function() {
     });
 
 });
+
+       $(document).ready(function(){
+           $('li img.story').on('click',function(){
+                var src = $(this).attr('src');
+                var img = '<img src="' + src + '" class="img-responsive"/>';
+                $('#myModal').modal();
+                $('#myModal').on('shown.bs.modal', function(){
+                    $('#myModal .modal-body').html(img);
+                });
+                $('#myModal').on('hidden.bs.modal', function(){
+                    $('#myModal .modal-body').html('');
+                });
+           });  
+        })
+
+        $(document).ready(function(){
+           $('li img.party-picture').on('click',function(){
+                var text = $(this).next('.wedding-party-content').html();
+                // var img = '<img src="' + src + '" class="img-responsive"/>';
+                var src = $(this).attr('src');
+                var img = '<img src="' + src + '" class="img-responsive"/>' + text;
+                $('#myModal-wedding').modal();
+                $('#myModal-wedding').on('shown.bs.modal', function(){
+                    $('#myModal-wedding .modal-body').html(img);
+                });
+                $('#myModal-wedding').on('hidden.bs.modal', function(){
+                    $('#myModal-wedding .modal-body').html('');
+                });
+           });  
+        })
+
+
 

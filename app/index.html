@@ -10,6 +10,7 @@
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="icon"  href="favicon.ico" >
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/responsive.css">
         <link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
@@ -18,71 +19,111 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="bower_components/jquery.localscroll/jquery.localscroll.min.js" type="text/javascript"></script> 
         <script src="bower_components/jquery.scrollTo/jquery.scrollTo.min.js" type="text/javascript"></script> 
-        <link rel="stylesheet" href="lightbox/lightbox.css" type="text/css" media="screen" />
-        <script type="text/javascript" src="lightbox/lightbox.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script> 
         <script type="text/javascript" src="scripts/app.js"></script>
     </head>
     <body>
-
-<!--     <div id="header">
-    <ul id="navigation">
-        <a href="#homeLink"><li class="home-nav">Jellen</li></a>
-        <a href="#pictureLink"><li class="pictures-nav">Pictures</li></a>
-        <a href="#storyLink"><li class="story-nav">Our Story</li></a>
-        <a href="#infoLink"><li class="info-nav" >Event Info</li></a>
-        <a href="#partyLink"><li class="party-nav" >Wedding Party</li></a>
-        <a href="#giftLink"><li class="gifts-nav">Gifts</li></a>
-    </ul>
-    </div> -->
+    <nav class="navbar navbar-default" id="header">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header" >
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+          <ul class="nav navbar-nav" id="navigation">
+            <li class="home-nav"><a href="#homeLink">Jellen</a></li>
+            <li class="pictures-nav"><a href="#pictureLink">Pictures</a></li>
+            <li class="story-nav"><a href="#storyLink">Our Story</a></li>
+            <li class="info-nav" ><a href="#infoLink">Event Info</a></li>
+            <li class="things-to-do-nav"><a href="#thingsToDoLink"> Things To Do</a></li>
+            <li class="party-nav" ><a href="#partyLink">Wedding Party</a></li>
+            <li class="Registry-nav"><a href="#registryLink">Registry</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>    
 
     <!-- Home Frame -->
 
-        <div class="home slide">
+        <div class="home panel panel-default">
             &nbsp;
-            <div class="content-box">
+            <div class="panel-body">
                 <a name="homeLink"></a>
                 <h1 class="jellen">Jellen Wedding</h1>
                 <h1 class="date"> 10 . 10 . 2015 </h1>
-                <h1 class="small"> Full Website Coming Soon </h1>
-             <!--    <h2 class="clickBelow"><span>Click</span><img src="images/down-arrow.png" ><span>Below</span></h2> -->
+                <!-- <h1 class="small"> Full Website Coming Soon </h1> -->
+            <h2 class="clickBelow"><span>Click</span><img src="images/down-arrow.png" ><span>Below</span></h2> 
             </div>
         </div>
 
     <!-- Pictures Frame -->
 
-   <!--      <div class="pictures slide">
+        <div class="pictures panel panel-default">
             <a name="pictureLink"></a>
-            <div class="content-box">
-                
+            <div class="panel-body">
                 <h1 class="jellen pictures">Pictures</h1>
-                
                 <h2 class="gallery-title">Click on the boxes</h2>
-                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2836.jpg" rel="lightbox" ><img class="photo one" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2836.jpg" title=""></a>
-                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2857.jpg" rel="lightbox" ><img class="photo two" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2857.jpg" title=""></a>
-                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2928.jpg" rel="lightbox" ><img class="photo three" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2928.jpg" title=""></a>
-                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3047.jpg" rel="lightbox" ><img class="photo four" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3047.jpg" title=""></a>
-                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3106.jpg" rel="lightbox" ><img class="photo five" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3106.jpg" title=""></a>
-                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3145.jpg" rel="lightbox" ><img class="photo six" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3145.jpg" title=""></a>
-                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3183.jpg" rel="lightbox" ><img class="photo seven" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3183.jpg" title=""></a>
-                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3252.jpg" rel="lightbox" ><img class="photo eight" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3252.jpg" title=""></a>
-                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3276.jpg" rel="lightbox" ><img class="photo nine" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3276.jpg" title=""></a>
-                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3222.jpg" rel="lightbox" ><img class="photo ten" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3222.jpg" title=""></a>
-                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3149.jpg" rel="lightbox" ><img class="photo eleven" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3149.jpg" title=""></a>
-                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3136.jpg" rel="lightbox" ><img class="photo twelve" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3136.jpg" title=""></a>
-                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3066.jpg" rel="lightbox" ><img class="photo thirteen" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3066.jpg" title=""></a>
-                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2992.jpg" rel="lightbox" ><img class="photo fourteen" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2992.jpg" title=""></a>
-                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2895.jpg" rel="lightbox" ><img class="photo fifteen" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2895.jpg" title=""></a>
-                    <a href="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2838.jpg" rel="lightbox" ><img class="photo sixteen" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2838.jpg" title=""></a>
-                <div class="gallery">
+                <div class="container gallery">
+                    <ul>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <img class="story" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2836.jpg">
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <img class="story" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2928.jpg">
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <img class="story" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3047.jpg">
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <img class="story" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2895.jpg">
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <img class="story" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3106.jpg">
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <img class="story" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3145.jpg">
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <img class="story" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3183.jpg">
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <img class="story" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3222.jpg">
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <img class="story" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3149.jpg">
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <img class="story" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3066.jpg">
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <img class="story" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-3276.jpg">
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <img class="story" src="images/gallery/EllenandJimmyEngagementbylucasbotzphotography-2992.jpg">
+                        </li>
+                    </ul>
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                       <div class="modal-dialog">
+                         <div class="modal-content">         
+                           <div class="modal-body">                
+                           </div>
+                         </div><!-- /.modal-content -->
+                       </div><!-- /.modal-dialog -->
+                     </div><!-- /.modal -->
                 </div>
-            
             </div>
-        </div> -->
+        </div>
 
     <!-- Our Story Frame -->
 
-       <!--  <div class="story slide">
-            <div class="content-box">
+        <div class="story panel panel-default">
+            <div class="panel-body">
             <a name="storyLink"></a>
                 
                 <div class="story-title">
@@ -116,7 +157,7 @@
                     </div>
                     <div class="highlights">
                         <a class="heart sixth">Highlight 6<span></span></a>
-                        <h4><span>November 2012</span><br>Against parent's wishes, Ellen + Jimmy move in together.</h4>
+                        <h4><span>November 2012</span><br> Ellen + Jimmy move in together.</h4>
                     </div>
                     <div class="highlights">
                         <a class="heart seventh">Highlight 7<span></span></a>
@@ -133,13 +174,13 @@
                 </div>
                 
             </div>
-        </div> -->
+        </div>
 
 
     <!-- Event Info Frame -->
 
-     <!--    <div class="info slide">
-            <div class="content-box">
+        <div class="info panel panel-default">
+            <div class="panel-body">
             <a name="infoLink"></a>
             
                 <div>
@@ -153,94 +194,343 @@
                 <div class="info-content">
                     <a href="http://www.ariampls.com" target="_blank"><h2>Aria Minneapolis</h2></a>
                     <h3>Ceremony begins at 5:30PM</h3>
-                    <p class="weddingDescription">Both the ceremnoy and reception will take place inside the Aria.  Dinner and dancing will follow shortly after. Bring your dancing shoes and get ready to get down to the sweet tunes of Hookers and Blow. Hotel blocks are available at the <a href="http://www.wminneapolishotel.com/" target="_blank">The W</a>, the <a href="http://www.starwoodhotels.com/westin/property/overview/index.html?propertyID=1723" target="_blank">Westin</a>, or the <a href="http://www.sheratonminneapolismidtown.com/" target="_blank">Sheraton</a>.</p>
-                    <div class="more-info">
-                        <a href="http://bit.ly/1BeuJNn" target="_blank" class="info btn">Driving Directions<span></span></a> 
+                    <p class="weddingDescription">Both the ceremony and reception will take place inside the Aria.  Dinner and dancing will follow shortly after. Bring your dancing shoes and get ready to get down to the sweet tunes of H&B. Hotel blocks are available at the The W Minneapolis Foshay, the Hotel Minneapolis, or the Sheraton Minneapolis West. Feel free to book the discounted room rates with the links below, or ask for the group rate for the Johnson/ Portnoy weddings over the phone.</p>
+                    <div class="more-info driving col-lg-2 col-md-3 col-xs-6 col-sm-3">
+                        <a href="http://bit.ly/1HdjZPF" target="_blank" class="info btn">Driving Directions<span></span></a> 
                     </div>
-                    <div class="more-info">
-                        <a href="https://www.starwoodmeeting.com/Book/JohnsonPortnoyBlock" target="_blank" class="info btn">W Hotel Block<span></span></a>
+                    <div class="more-info col-lg-2 col-md-3 col-xs-6 col-sm-3">
+                        <a href="https://www.starwoodmeeting.com/Book/JohnsonPortnoyBlock" target="_blank" class="info btn">The W<span></span></a> 
+                    </div>
+                    <div class="more-info col-lg-2 col-md-3 col-xs-6 col-sm-3">
+                        <a href="http://bit.ly/1OMWXoe" target="_blank" class="info btn">Hotel Minneapolis <span></span></a> 
+                    </div>
+                    <div class="more-info col-lg-2 col-md-3 col-xs-6 col-sm-3">
+                        <a href="https://www.starwoodmeeting.com/Book/JohnsonPortnoy" target="_blank" class="info btn">Sheraton<span></span></a> 
                     </div>
                 </div>
                 
             </div>
-        </div> -->
+        </div>
         
     <!-- Wedding Party Frame -->
         
-<!--         <div class="party slide">
-            <div class="content-box">
+        <div class="party panel panel-default">
+            <div class="panel-body">
             <a name="partyLink"></a>
             
                 <div >
                     <h1 class="jellen">The Wedding Party</h1>
                 </div>
                 
-                <div class="groomsmen">
+                <div class="wedding-party">
                     <h3 class="wp-title">Groomsmen</h3>
-                    
-                    <div class="party-gallery">
-                       <img class="wp one" rel="guys-gallery" src="images/bestman.jpeg" title="BEST MAN: name">
-                       <img class="wp two" rel="guys-gallery" src="images/bestman.jpeg" title="name">
-                       <img class="wp three" rel="guys-gallery" src="images/bestman.jpeg" title="name">
-                       <img class="wp four" rel="guys-gallery" src="images/bestman.jpeg" title="name">
-                       <img class="wp five" rel="guys-gallery" src="images/bestman.jpeg" title="name">
-                       <img class="wp six" rel="guys-gallery" src="images/bestman.jpeg" title="name">
-                       <img class="wp seven" rel="guys-gallery" src="images/bestman.jpeg" title="name">
-                    </div>
-                </div> -->
+                    <div class="container gallery">
+                    <ul>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <img class="party-picture" src="images/wedding-party/dan.jpg">
+                            <div class="wedding-party-content">
+                                <h4> Dan Portnoy - Best Man </h4>
+                                <ul>
+                                    <li><strong>Location: </strong>Kansas City, MO (Minneapolis boy at heart)</li>
+                                    <li><strong>Relation: </strong>Older and only brother</li>
+                                    <li>Jimmy’s informal legal counsel whenever caught in a bind; Dan has been around to pick his littlebrother up for the last 28 years. Dan enjoys drinks from the 60s, being the only liberal person at a conservative dinner table, and only follows global sports not played in the United States</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <img class="party-picture" src="images/wedding-party/Jim_Jesse.jpg">
+                            <div class="wedding-party-content">
+                                <h4> Jesse Nelson - Groomsman </h4>
+                                <ul>
+                                    <li><strong>Location: </strong>Minneapolis, MN</li>
+                                    <li><strong>Relation: </strong>High School Friend and Tarlot Member</li>
+                                    <li>Jimmy’s moral compass whenever faced with making any kind of decision; he thinks what Coach Nelson would do?  Jesse enjoys high school and college football, holiday parties, and always being the most intense and competitive person on the floor… no matter what the activity.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <img class="party-picture" src="images/wedding-party/Jim_Matt.jpg">
+                            <div class="wedding-party-content">
+                                <h4> Matt Follese - Groomsman </h4>
+                                <ul>
+                                    <li><strong>Location: </strong>Denver, CO</li>
+                                    <li><strong>Relation: </strong>High School Friend and Tarlot Member</li>
+                                    <li>Jimmy’s loyal companion in all ventures (both musical and house toilet papering);  Matt has stuck by Jimmy’s side from the sleepover ban of 2003 to this day.  Matt enjoys fantasy hockey, playing guitar, and Sergei Federov.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <img class="party-picture" src="images/wedding-party/Jim_Kyler.jpg">
+                            <div class="wedding-party-content">
+                                <h4> Kyler Queen - Groomsman</h4>
+                                <ul>
+                                    <li><strong>Location: </strong>Chicago, IL</li>
+                                    <li><strong>Relation: </strong>High School Friend and Tarlot Member</li>
+                                    <li>Jimmy’s doubles ping pong partner and Chicago outlet of fun; Kyler and Jimmy have been wreaking havoc since the early days of Code Red on the soccer fields of Minnetonka.  Kyler enjoys Boston athletics, being the best dressed at all occasions, and contemporary Frank Lloyd Wright designs.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <img class="party-picture" src="images/wedding-party/Jim_Braden.jpg">
+                            <div class="wedding-party-content">
+                                <h4> Braden French - Groomsman</h4>
+                                <ul>
+                                    <li><strong>Location: </strong>New York, New York</li>
+                                    <li><strong>Relation: </strong>High School Friend and Tarlot Member</li>
+                                    <li>Jimmy’s long time bitter rival on the Tarlot; When not exchanging choice words on the lot, Jimmy and Braden spent much of the early millennium tasting different root beers and watching mid-90s Oscar winning films.  Braden enjoys outworking his peers, falling asleep at social gatherings, and east coast style short shorts.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <img class="party-picture" src="images/wedding-party/Jim_Ryan.jpg">
+                            <div class="wedding-party-content">
+                                <h4> Ryan Lupton - Groomsman </h4>
+                                <ul>
+                                    <li><strong>Location: </strong>Durham, NC</li>
+                                    <li><strong>Relation: </strong>Georgetown Friend</li>
+                                    <li>Jimmy’s regular 3 o clock playdate at Georgetown; when not studying, they spent most of their time spent arguing over Mario Kart characters and Georgetown Basketball.  Ryan enjoys locally sourced food, spending time with his family (wife and 2 yr old son), and griping about how pathetic the Atlanta Braves are.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <img class="party-picture" src="images/wedding-party/Jim_Taylor.jpg">
+                            <div class="wedding-party-content">
+                                <h4> Taylor Lupton </h4>
+                                <ul>
+                                    <li><strong>Location: </strong>Atlanta, GA</li>
+                                    <li><strong>Relation: </strong> Brother of Ryan</li>
+                                    <li>Jimmy’s southern outlet for all things fun and over the top; Jimmy met Taylor through Ryan, philosophized in the mountains of North Carolina, and from that point forward there was no consideration of one Lupton brother without the other. Taylor enjoys photographing the world in ways you can only imagine, taking things right up to the edge of “too far”, and not sitting still.</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="modal fade" id="myModal-wedding" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                       <div class="modal-dialog">
+                         <div class="modal-content">         
+                           <div class="modal-body">                
+                           </div>
+                         </div><!-- /.modal-content -->
+                       </div><!-- /.modal-dialog -->
+                     </div><!-- /.modal -->
+                </div>
+                </div>
                 
-   <!--              <div class="bridesmaids">
-                    <h3 class="wp-title">Bridesmaids</h3>
-                    
-                    <div class="party-gallery">
-                        <img class="wp one" rel="girls-gallery" src="images/bridesmaid.jpg" title="BEST MAN: name">
-                        <img class="wp two" rel="girls-gallery" src="images/bridesmaid.jpg" title="name">
-                        <img class="wp three" rel="girls-gallery" src="images/bridesmaid.jpg" title="name">
-                        <img class="wp four" rel="girls-gallery" src="images/bridesmaid.jpg" title="name">
-                        <img class="wp five" rel="girls-gallery" src="images/bridesmaid.jpg" title="name">
-                        <img class="wp six" rel="girls-gallery" src="images/bridesmaid.jpg" title="name">
-                        <img class="wp seven" rel="girls-gallery" src="images/bridesmaid.jpg" title="name">
-                    </div>
+                <div class="wedding-party">
+                    <h3 class="wp-title">Bridemaids</h3>
+                    <div class="container gallery">
+                    <ul>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <img class="party-picture" src="images/wedding-party/emily.jpg">
+                            <div class="wedding-party-content">
+                                <h4> Emily Heintzelman - Matron of Honor</h4>
+                                <ul>
+                                    <li><strong>Location: </strong>Kansas City, Kansas (her heart is still in Mn though!)</li>
+                                    <li><strong>Relation: </strong>Older Sister</li>
+                                    <li> Ellen’s first and favorite playmate as a child, and fierce closet-raiding-competitor in High School; she had to deal with being the older sister whose younger counterpart got away with so much more than her growing up, Thanks Ems! Emily is Mom to Penelope, the cutest child on earth, and enjoys Kim Crawford Sauvignon Blanc- why drink anything else when you know what you like?</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <img class="party-picture" src="images/wedding-party/mary.jpg">
+                            <div class="wedding-party-content">
+                                <h4> Mary Kreps- Bridesmaid </h4>
+                                <ul>
+                                    <li><strong>Location: </strong>Minneapolis, Minnesota (just a few blocks from Ellen and Jimmy’s house)</li>
+                                    <li><strong>Relation: </strong>Met while nannying in college.</li>
+                                    <li>Ellen’s Friday and Saturday night dance buddy back in their single years, and one of the best advice givers of all time.   Mary and Ellen now spend their time together supporting each others life goals, drinking wine, and encouraging each other to sign up for long races they may or may not actually run. Mary enjoys making a variety of delicious paleo baked goods, going on happy hour walks with her boyfriend, and being the busiest person Ellen knows.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <img class="party-picture" src="images/wedding-party/erica.jpg">
+                            <div class="wedding-party-content">
+                                <h4> Erica Eiden - Bridesmaid </h4>
+                                <ul>
+                                    <li><strong>Location: </strong>Minneapolis, MN</li>
+                                    <li><strong>Relation: </strong>High School friend</li>
+                                    <li>Ellen’s oldest and wildest friend; their friendship has grown from the days of high school shenanigans to adult shenanigans. Ellen’s love for music and concerts can largely be attributed to Erica introducing her to all things concerts and festivals way back when. Erica enjoys good food, Bluegrass, and performing her aerial silks routines.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <img class="party-picture" src="images/wedding-party/Jenna-Rammuno.jpg">
+                            <div class="wedding-party-content">
+                                <h4> Jenna Rammuno - Bridesmaid </h4>
+                                <ul>
+                                    <li><strong>Location: </strong>Venice Beach, CA</li>
+                                    <li><strong>Relation: </strong>College Friend</li>
+                                    <li>Ellen’s only friend whose travel bug might be bigger than her own; when they’re not testing each others patience on long, international vacations, Ellen and Jenna enjoy over-sharing on every detail of each others lives, often in hour+ long phone conversations. Jenna enjoys live music, handsome men, and energy crystals.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <img class="party-picture" src="images/wedding-party/maddie.jpg">
+                            <div class="wedding-party-content">
+                                <h4> Maddie Meyers - Bridesmaid </h4>
+                                <ul>
+                                    <li><strong>Location: </strong>Minneapolis, Minnesota</li>
+                                    <li><strong>Relation: </strong>Former coworker from lululemon athletica</li>
+                                    <li>Part 1 of 3 of Ellen’s wine girls group, Ellen and Maddie met and bonded at one of the most bizarre company team building activities of all time.  Most of their time is spent celebrating life  events, drinking wine and constantly communicating via text messaging. Maddie enjoys working out, playing with her dog, Cash, and avoiding putting titles on anything in life.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <img class="party-picture" src="images/wedding-party/ashley.jpg">
+                            <div class="wedding-party-content">
+                                <h4> Ashley Gilberston- Bridesmaid </h4>
+                                <ul>
+                                    <li><strong>Location: </strong>Minneapolis, Minnesota</li>
+                                    <li><strong>Relation: </strong>Former coworker from lululemon athletica</li>
+                                    <li>Part 2 of 3 of Ellen’s wine girls group; Ellen can always count on Ashley to bring delicious cheese,meat and crackers to their get togethers.  Ashley is Ellen’s most creative friend, and can whip together a craft to make even the most veteran pinterest-pinner envious. Ashley enjoys weekends at the family cabin with her fiancé, Mike, vodka based beverages, and sleeping with wet hair.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <img class="party-picture" src="images/wedding-party/amie.jpg">
+                            <div class="wedding-party-content">
+                                <h4> Amie Driesen - Bridesmaid </h4>
+                                <ul>
+                                    <li><strong>Location: </strong>New resident of Milwaukee, Wisconsin</li>
+                                    <li><strong>Relation: </strong>Former coworker from lululemon athletica</li>
+                                    <li>Part 3 of 3 of Ellen’s wine girls group. Ellen and Amie bonded over extremely early mornings at work, yoga and their mutual love of the Whitefish Chain. Elmie (Ellen + Amie) have been known to eat copious amount of Yogurt Lab in the summer and binge watch TV together in the winter. Amie enjoys baking delicious and beautiful  treats, going with the flow, and borrowing clothes from Maddie.</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="modal fade" id="myModal-wedding" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                       <div class="modal-dialog">
+                         <div class="modal-content">         
+                           <div class="modal-body">                
+                           </div>
+                         </div><!-- /.modal-content -->
+                       </div><!-- /.modal-dialog -->
+                     </div><!-- /.modal -->
+                </div>
+                </div>
+                <div class="wedding-party">
+                    <h3 class="wp-title">Officiant</h3>
+                    <div class="container gallery">
+                    <ul>
+                        <li class="officiant">
+                            <img class="party-picture" src="images/wedding-party/liz.jpg">
+                            <div class="wedding-party-content">
+                                <h4> Liz Portnoy - Wedding Officiant </h4>
+                                <ul>
+                                    <li><strong>Location: </strong>Brooklyn, New York (where the cool people live)</li>
+                                    <li><strong>Relation: </strong>Sister to the Newly Weds to be</li>
+                                    <li>Liz was one of the early witnesses to the blossoming relationship during the “we’re just friends” stage. Additionally, Jellen was very thankful that Liz agreed to loan her birthday to them for their wedding day. Liz enjoys walking incredibly long distances at a fast pace, complex data visualization, and trying to convince everyone she’s actually Latin American.</li>
+                                    <li>We asked Liz to officiate our wedding because she has played just as big a role in our lives as ourbest man and matron of honor.  We couldn’t think of anyone better to officiate the biggest day of our lives.   With her witty and dry humor, mensa-level IQ, and knowledge of all things “Jellen”, she will be sure to dazzle the crowd.</li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="modal fade" id="myModal-wedding" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                       <div class="modal-dialog">
+                         <div class="modal-content">         
+                           <div class="modal-body">                
+                           </div>
+                         </div><!-- /.modal-content -->
+                       </div><!-- /.modal-dialog -->
+                     </div><!-- /.modal -->
+                
                 </div>
                 
             </div>
-        </div> -->
-        
-    <!-- Gifts Frame -->
-   <!--      
-        <div class="gifts slide">
+            </div>
+        </div>
 
-            <div class="content-box">
-                <a name="giftLink"></a>
-                
-                <div>
-                <h1 class="jellen">Gifts &amp; Registry</h1>
+            <!-- Things to do -->
+
+        <div class="things-to-do panel panel-default">
+            <div class="panel-body">
+                <a name="thingsToDoLink"></a>
+                <div class="story-title">
+                    <h1 class="jellen">While in Minneapolis...</h1>
                 </div>
                 
+                <h2>Welcome to Our City</h2>
+                <div class="things-to-do-map">
+                <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/lizport10.ljcl4no2/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoibGl6cG9ydDEwIiwiYSI6IkNnaGZuam8ifQ.ytq8ZMrhPrnoWQsPnfkZMQ'></iframe>
+                </div>
+                <ul class="things-to-do-list"> 
+                    <li> Walk a lake 
+                        <ul>
+                            <li> Lake Calhoun </li>
+                            <li> Lake Harriet </li>
+                            <li> Lake of the Isles (our favorite!)</li>
+                        </ul>
+                    </li>
+                    <li> Check out our neighborhood of Linden Hills - quaint and quiet 
+                        <ul>
+                            <li> Tilia </li>
+                            <li> Sebastian Joe's Ice Cream </li>
+                        </ul>
+                    </li>
+                    <li> Visit a brewery 
+                        <ul>
+                            <li>Surly Brewery</li>
+                            <li> Cider Werks </li>
+                            <li>Fulton Brewery</li>       
+                            <li>Dangerous Man Brewing Company</li>
+                            <li> Indeed Brewing Company and Tap Room</li>
+                        </ul>
+                    </li>
+                    <li> Do as the Minnesotans do...
+                        <ul>
+                            <li>Rent kayaks, canoes, or paddle boards at Lake Calhoun</li>
+                            <li> Bar hop in Uptown </li>
+                            <li> Rub elbows with the ladies who lunch at 50th and France </li>
+                            <li>Ride the ferris wheel at Betty Danger's Country Club</li>
+                            <li>Surround yourself in tiki at Psycho Suzi's</li>
+                            <li>Lawn bowl at Brit's Pub</li>
+                            <li>Rent a Nice Rides bike and take a trip to Minnehaha Falls (stop at Seasalt restaurant once you get there if you're hungry)</li>
+                            <li>Be artsy and peruse the Sculpture Gardens at the Walker Arts Center</li>
+                            <li>Shop and walk the Mall of America</li>
+                            <li> Venture to the bars in Northeast Minneapolis </li>
+                        </ul>
+                    </li>
+                </ul>
                 
-                <h2>Check out our registry <a class="registry" href="http://registry.theknot.com/ellen-johnson-james-portnoy-october-2015-mn/9985183" target="_blank"> here </a></h2>
+            </div>
+        </div>
+        
+    <!-- Registry Frame -->
+        
+        <div class="registry panel panel-default">
+
+            <div class="panel-body">
+                <a name="registryLink"></a>
+                
+                <div>
+                <h1 class="jellen">Registry</h1>
+                </div>
+                
+                <div class="subtitle">
+                    <h3> We're registered at Macy's, Crate &amp; Barrel, and Williams-Sonoma. Click the links below or check out our full registry <a class="registry" href="http://registry.theknot.com/ellen-johnson-james-portnoy-october-2015-mn/9985183" target="_blank"> here </a></h3>
+                    </div>
                 <div class="allregister">
-                    <div class="registry">
-                        <img src="images/macys.png">
+                    <div class="col-xs-6 col-md-4 gifts">
+                        <a href="http://mcys.co/1xmVAqK" target="_blank"><img src="images/macys.png"></a>
                     </div>
-                     <div class="registry">
-                        <img src="images/crate-and-barrel.jpg">
+                     <div class="col-xs-6 col-md-4 gifts">
+                        <a href="http://www.crateandbarrel.com/gift-registry/ellen-johnson-and-james-portnoy/r5292602" target="_blank"><img src="images/crate-and-barrel.jpg"></a>
                     </div>
-                     <div class="registry">
-                        <img src="images/williams_sonoma_logo.jpg">
+                     <div class="col-xs-6 col-md-4 gifts">
+                        <a href="https://secure.williams-sonoma.com/registry/cflrswfmc2/registry-list.html" target="_blank"><img src="images/williams_sonoma_logo.jpg"></a>
                     </div>
                 </div>             
             </div>
-        </div> -->
+        </div>
         
     <!-- Bottom Nav --> 
         
-  <!--       <div id="bottom-nav">
+        <div id="bottom-nav">
             <img src="images/down-arrow-darker.png" alt="Next">
             <div id="next">
                 <img src="images/down-arrow.png" alt="Next">
             </div>
-        </div>     -->
+        </div>    
     <!-- Footer --> 
 
 </body>
