@@ -434,16 +434,13 @@ ul li img {
 }
 
 .map-content{
-  float:left;
-  width:25%;
+  width:30%;
+  height: 16em;
   margin: 1em 0 2em 3em;
-  height:15.5em;
 }
 .info-content{
-  float:right;
   width: 60%;
-  height:15.5em;
-  margin: 1em 3em 8em 0;
+  margin: 1em 3em 3em 0;
 }
 .info-content h2{
   margin: 0;
@@ -468,21 +465,11 @@ p.weddingDescription {
   padding:0;
 }
 
-.line-seperator{
-  display:block;
-  margin:auto;
-  margin-top:28px;
-  margin-bottom:28px;
-  height:1px;
-  width:450px;
-  background:#bbbbbb;
-}
-
 .more-info{
   color:#5F4637;
   display: table;
   opacity: .5;
-  margin: 2em 0;
+  margin: 1em 0;
   height: 22%;
 }
 
@@ -493,7 +480,7 @@ p.weddingDescription {
 .btn{
   margin:0;
   text-align:center;
-  width: 100%;
+  width: 60%;
   font-family:'Handlee', arial;
   font-size:1.2em;
   white-space: pre-line;
@@ -668,7 +655,6 @@ div.allregister {
 
 .things-to-do-list {
   width: 40%;
-  float: right;
   margin-right: 2em;
 }
 
@@ -700,8 +686,6 @@ div.allregister {
 } 
 
 .things-to-do-map {
-  width: 50%;
   /*margin: 0 auto;*/
   margin-left: 3em;
-  float: left;
 }
