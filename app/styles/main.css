@@ -702,5 +702,6 @@ div.allregister {
 .things-to-do-map {
   width: 50%;
   /*margin: 0 auto;*/
+  margin-left: 3em;
   float: left;
 }
